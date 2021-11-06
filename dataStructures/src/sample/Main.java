@@ -99,9 +99,9 @@ public class Main extends Application {
                     "Delete: When a student removes an item, say in the middle, all succeeding items will be shifted to fill up the freed up space\n\n");
             root1.getChildren().setAll(btn1, btn2, btn3, btn4,btn5,btn6, btn7, btn8,
                     line_top, line_part, textArea,
-                    locker.Locker(225, 150), locker.inner_rect(225,150), locker.handle(225,150), locker.locker_number(225,150,"1"),
-                    locker.Locker(400,150), locker.inner_rect(400,150), locker.handle(400,150), locker.locker_number(400, 150,"2"),
-                    locker.Locker(575,150), locker.inner_rect(575,150), locker.handle(575,150), locker.locker_number(575, 150,"3"));
+                    locker.Locker(225, 150, "1"),
+                    locker.Locker(400, 150, "2"),
+                    locker.Locker(575, 150, "3"));
         });
         
         //TODO: Dynamic Array
@@ -110,11 +110,23 @@ public class Main extends Application {
             root1.getChildren().setAll(btn1, btn2, btn3, btn4,btn5,btn6, btn7, btn8, line_top, line_part, textArea);
         });
 
-        //TODO: Singly-Linked List
         btn3.setOnAction(e -> {
-            textArea.setText("Explanation for Singly-Linked List");
+            Clinic clinic = new Clinic();
+
+            textArea.setText("Singly-Linked List can be related to a doctor's appointment (or a job interview), where in " +
+                    "clients, or the patients must be called in an ordinal manner. For a patient to be reached and called-in " +
+                    "preceding patients must first be accommodated or traversed\n\n" +
+                    "Access: Patients can choose to sit anywhere, but is still sorted in an ordinal manner either by appointment or walk-in\n\n" +
+                    "Search: The 'next' patient is called-in only after the previous one\n\n" +
+                    "Insert: \n(1) At the front - the patient who originally have a scheduled appointment, and is right on time is prioritized over walk-ins." +
+                    "\n(2) In the middle - the patient who originally have a scheduled appointment, but is earlier than expected, " +
+                    "has no priority over earlier walk-ins but has so in later walk-ins" +
+                    "\n(3) At the end - the walk-in patients\n\n" +
+                    "Delete: A patient cancelling an appointment would free a time slot, and so it must shift all patients to an " +
+                    "earlier call-in but still must respect the ordinal sorting.\n\n");
             root1.getChildren().setAll(btn1, btn2, btn3, btn4,btn5,btn6, btn7, btn8,
-                    line_top, line_part, textArea);
+                    line_top, line_part, textArea,
+                    clinic.clinic(), clinic.patients());
         });
         
         //TODO: Doubly-Linked List
