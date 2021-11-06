@@ -143,7 +143,7 @@ public class Main extends Application {
                     "Access: To access a certain book, one would start at the top and remove others from the stack\n\n" +
                     "Search: Similar to accessing, it will start from the top and remove the other books to find the book\n\n" +
                     "Insert: Books can only be inserted at the top of the stack\n\n" +
-                    "Delete: The book that will be removed first is the book at the top of the stack\n\n"");
+                    "Delete: The book that will be removed first is the book at the top of the stack\n\n");
             root1.getChildren().setAll(btn1, btn2, btn3, btn4,btn5,btn6, btn7, btn8,
                     line_top, line_part, textArea,
                     Book.Container(325,95),
