@@ -126,9 +126,19 @@ public class Main extends Application {
         
         //TODO: Stack
         btn5.setOnAction(e -> {
-            textArea.setText("Explanation for Stack");
+            textArea.setText("Stack could be visualized as a stack of books, where anyone could add or remove a book " +
+                    "but by first going through the topmost book, in order to not change the arrangement of the other books at the bottom.\n\n" +
+                    "Access: To access a certain book, one would start at the top and remove others from the stack\n\n" +
+                    "Search: Similar to accessing, it will start from the top and remove the other books to find the book\n\n" +
+                    "Insert: Books can only be inserted at the top of the stack\n\n" +
+                    "Delete: The book that will be removed first is the book at the top of the stack\n\n"");
             root1.getChildren().setAll(btn1, btn2, btn3, btn4,btn5,btn6, btn7, btn8,
-                    line_top, line_part, textArea);
+                    line_top, line_part, textArea,
+                    Book.Container(325,95),
+                    Book.Space(350,75),
+                    Book.BookA(350,300), Book.number(305,290,"Book 1"),
+                    Book.BookB(350,225), Book.number(305,290-75,"Book 2"),
+                    Book.BookC(350,150), Book.number(305,290-150,"Book 3"));
         });
 
         //TODO: Queue
