@@ -79,7 +79,7 @@ public class Clinic{
             num.setFont(Font.font("Arial", 24));
             num.setLayoutX(patients[arr[i]].getCenterX()-7);
             num.setLayoutY(patients[arr[i]].getCenterY()-12);
-
+            
             group.getChildren().addAll(patients[arr[i]], num);
         }
 
