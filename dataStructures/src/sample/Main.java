@@ -85,7 +85,7 @@ public class Main extends Application {
          * root1.getChildren().setAll(btn1, btn2, btn3, btn4,text, your objects...,n);
          */
         btn1.setOnAction(e -> {
-            // Lockers
+           
             Locker locker = new Locker();
 
             textArea.setText("Static arrays can be thought of as school lockers, where there is a finite number of lockers which " +
@@ -100,42 +100,49 @@ public class Main extends Application {
                     locker.Locker(400,150), locker.inner_rect(400,150), locker.handle(400,150), locker.locker_number(400, 150,"2"),
                     locker.Locker(575,150), locker.inner_rect(575,150), locker.handle(575,150), locker.locker_number(575, 150,"3"));
         });
-
+        
+        //TODO: Dynamic Array
         btn2.setOnAction(e -> {
             textArea.setText("Explanation for Dynamic Array");
             root1.getChildren().setAll(btn1, btn2, btn3, btn4,btn5,btn6, btn7, btn8, line_top, line_part, textArea);
         });
 
+        //TODO: Singly-Linked List
         btn3.setOnAction(e -> {
             textArea.setText("Explanation for Singly-Linked List");
             root1.getChildren().setAll(btn1, btn2, btn3, btn4,btn5,btn6, btn7, btn8,
                     line_top, line_part, textArea);
         });
-
+        
+        //TODO: Doubly-Linked List
         btn4.setOnAction(e -> {
             textArea.setText("Explanation for Doubly-Linked List");
             root1.getChildren().setAll(btn1, btn2, btn3, btn4,btn5,btn6, btn7, btn8,
                     line_top, line_part, textArea);
         });
-
+        
+        //TODO: Stack
         btn5.setOnAction(e -> {
             textArea.setText("Explanation for Stack");
             root1.getChildren().setAll(btn1, btn2, btn3, btn4,btn5,btn6, btn7, btn8,
                     line_top, line_part, textArea);
         });
 
+        //TODO: Queue
         btn6.setOnAction(e -> {
             textArea.setText("Explanation for Queue");
             root1.getChildren().setAll(btn1, btn2, btn3, btn4,btn5,btn6, btn7, btn8,
                     line_top, line_part, textArea);
         });
 
+        //TODO: Binary Search Tree
         btn7.setOnAction(e -> {
             textArea.setText("Explanation for Binary Search Tree");
             root1.getChildren().setAll(btn1, btn2, btn3, btn4,btn5,btn6, btn7, btn8,
                     line_top, line_part, textArea);
         });
 
+        //TODO: Hash Table
         btn8.setOnAction(e -> {
             textArea.setText("Explanation for Hash Table");
             root1.getChildren().setAll(btn1, btn2, btn3, btn4,btn5,btn6, btn7, btn8,
