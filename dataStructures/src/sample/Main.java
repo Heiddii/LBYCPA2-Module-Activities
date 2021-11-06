@@ -88,11 +88,14 @@ public class Main extends Application {
            
             Locker locker = new Locker();
 
-            textArea.setText("Static arrays can be thought of as school lockers, where there is a finite number of lockers which " +
-                    "is or isn't enough for all the students." +
-                    "Access: Lockers are numbered, the primary system of allocation for students\n\n" +
-                    "Search: To find a specific item with an unknown locker number, a locker and the succeeding lockers must be opened until it is located \n\n" +
-                    "Insert: Students put items, ideally in a systematic back-to-front or left-to-right order\n\n" +
+            textArea.setText("Static arrays can be thought of as school lockers, where they have a: \n" +
+                    "(1) Fixed size, irrespective of the items being store, and whether it is full or not\n" +
+                    "(2) Common 'data type' being stored, which are the school items\n" +
+                    "(3) Finite count, irrespective of the student count\n" +
+                    "(4) Locker number, which systematizes the students' locker location\n\n" +
+                    "Access: Locker numbers are the main method of indexing\n\n"+
+                    "Search: To find a specific item with an unknown locker number, lockers can be opened randomly and not necessarily in an ordinal way.\n\n" +
+                    "Insert: The latest student who avails a locker must be successive to a locker that's been availed\n\n" +
                     "Delete: When a student removes an item, say in the middle, all succeeding items will be shifted to fill up the freed up space\n\n");
             root1.getChildren().setAll(btn1, btn2, btn3, btn4,btn5,btn6, btn7, btn8,
                     line_top, line_part, textArea,
