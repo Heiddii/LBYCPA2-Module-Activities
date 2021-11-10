@@ -10,6 +10,8 @@ import javafx.scene.shape.*;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.scene.paint.Color;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 
 public class Main extends Application {
 
@@ -162,9 +164,29 @@ public class Main extends Application {
 
         //TODO: Binary Search Tree
         btn7.setOnAction(e -> {
-            textArea.setText("Explanation for Binary Search Tree");
+            textArea.setText("What is a binary search tree?\n" +
+                    "\n" +
+                    "\t- Think of it as dictionaries having keys and values\n" +
+                    "\t- Blockchain technology can be considered a real life application" +
+                    "\n" + "since it can be hard to hack and keys/values can be stored in a ledger." +
+                    "\n" +
+                    "Value of the key: left < parent (node) < right\n" +
+                    "\n" +
+                    "• Search − Searches an element in a tree.\n" +
+                    "Compare values against its roots (left||right) and parent (node)\n" +
+                    "• Insert − Inserts an element in a tree.\n" +
+                    "• Pre-order Traversal − Traverses a tree in a pre-order manner.\n" +
+                    "• In-order Traversal − Traverses a tree in an in-order manner.\n" +
+                    "Post-order Traversal − Traverses a tree in a post-order manner.");
+
+
+            Image blockchain = new Image("sample/blockchain.jpg");
+            final ImageView blockandchain = new ImageView();
+            blockandchain.setImage(blockchain);
+            blockandchain.setX(300);
+            blockandchain.setY(150);
             root1.getChildren().setAll(btn1, btn2, btn3, btn4,btn5,btn6, btn7, btn8,
-                    line_top, line_part, textArea);
+                    line_top, line_part, textArea,blockandchain);
         });
 
         //TODO: Hash Table
