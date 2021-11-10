@@ -108,7 +108,13 @@ public class Main extends Application {
         
         //TODO: Dynamic Array
         btn2.setOnAction(e -> {
-            textArea.setText("Explanation for Dynamic Array");
+            textArea.setText("Dynamic arrays is an array that when all the elements space is consumed its size will increase. " +
+                    "The size increase formula is 2*n which n is signifying the size of the array.  " +
+                    "Dynamic arrays is like a bank one a bank can store data.\n\n" +
+                    "(1) Access: To access an account there is a set of numbers that is unique to that account where the money is stored \n\n" +
+                    "(2) Search: Is the same as access the number that was on the card is the indicator what acct it is\n\n" +
+                    "(3) Insert: Opening a bank account is also dynamic because there are a lots of cards or bank account issued by tghe banks.\n\n" +
+                    "(4) Access: When accessing a  data in the Dynamic array it is the same with static arrays\n\n ");
             root1.getChildren().setAll(btn1, btn2, btn3, btn4,btn5,btn6, btn7, btn8, line_top, line_part, textArea);
         });
 
