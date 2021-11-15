@@ -110,7 +110,7 @@ public class Main extends Application {
         btn2.setOnAction(e -> {
             textArea.setText("Dynamic arrays is an array that when all the elements space is consumed its size will increase. " +
                     "The size increase formula is 2*n which n is signifying the size of the array.  " +
-                    "Dynamic arrays is like a bank one a bank can store data.\n\n" +
+                    "Dynamic arrays is like a bank.\n\n" +
                     "(1) Access: To access an account there is a set of numbers that is unique to that account where the money is stored \n\n" +
                     "(2) Search: Is the same as access the number that was on the card is the indicator what acct it is\n\n" +
                     "(3) Insert: Opening a bank account is also dynamic because there are a lots of cards or bank account issued by tghe banks.\n\n" +
@@ -139,7 +139,13 @@ public class Main extends Application {
         
         //TODO: Doubly-Linked List
         btn4.setOnAction(e -> {
-            textArea.setText("Explanation for Doubly-Linked List");
+            textArea.setText("A doubly-link list is creating a playlist\n\n"
+                            + "(1) To insert a data you can add it to the first or the last or after an element "
+                            + "(2) When the playlist is playing you can move backward or forward\n\n
+                            + "(3) In deleting an element is similar in a sense since you can delete anything inside on the playlist"
+                            + "(4) Same as a playlist when searching a data it can see if the data is in or not"
+                            + "Lastly the data in can be presented in a forward or backward manner which is also possible in a playlist");
+            //The one who owns this can change it if you think you can do better ~~Ace
             root1.getChildren().setAll(btn1, btn2, btn3, btn4,btn5,btn6, btn7, btn8,
                     line_top, line_part, textArea);
         });
@@ -163,7 +169,11 @@ public class Main extends Application {
 
         //TODO: Queue
         btn6.setOnAction(e -> {
-            textArea.setText("Explanation for Queue");
+            textArea.setText(" Queue is the as lining up to an event because it follows the first in first out rule\n\n"
+                            + "Access: Similar to lining up to an event the first one to go in will always be the first one who lined up\n\n" 
+                            + "Insert: When inserting data it is always is behind the one who lined up first which is similar to lining up\n\n"
+                            + "Delete: When deleting a data you will clear out the first one same with an event people lined up for the first one to go in is always the one in the front\n\n"
+                            + "Search: When searching of data it is the same when accessing and deleting it you can only see the first data\n\n");
             root1.getChildren().setAll(btn1, btn2, btn3, btn4,btn5,btn6, btn7, btn8,
                     line_top, line_part, textArea);
         });
@@ -197,7 +207,8 @@ public class Main extends Application {
 
         //TODO: Hash Table
         btn8.setOnAction(e -> {
-            textArea.setText("Explanation for Hash Table");
+            textArea.setText("");
+            // Same with the first Doubly if the one assign can think of a better preview please put it
             root1.getChildren().setAll(btn1, btn2, btn3, btn4,btn5,btn6, btn7, btn8,
                     line_top, line_part, textArea);
         });
