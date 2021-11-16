@@ -111,10 +111,10 @@ public class Main extends Application {
             textArea.setText("Dynamic arrays is an array that when all the elements space is consumed its size will increase. " +
                     "The size increase formula is 2*n which n is signifying the size of the array.  " +
                     "Dynamic arrays is like a bank.\n\n" +
-                    "(1) Access: To access an account there is a set of numbers that is unique to that account where the money is stored \n\n" +
-                    "(2) Search: Is the same as access the number that was on the card is the indicator what acct it is\n\n" +
-                    "(3) Insert: Opening a bank account is also dynamic because there are a lots of cards or bank account issued by tghe banks.\n\n" +
-                    "(4) Access: When accessing a  data in the Dynamic array it is the same with static arrays\n\n ");
+                    "Access: To access an account there is a set of numbers that is unique to that account where the money is stored \n\n" +
+                    "Search: Is the same as access the number that was on the card is the indicator what acct it is\n\n" +
+                    "Insert: Opening a bank account is also dynamic because there are a lots of cards or bank account issued by tghe banks.\n\n" +
+                    "Access: When accessing a  data in the Dynamic array it is the same with static arrays\n\n ");
             root1.getChildren().setAll(btn1, btn2, btn3, btn4,btn5,btn6, btn7, btn8, line_top, line_part, textArea);
         });
 
@@ -140,10 +140,10 @@ public class Main extends Application {
         //TODO: Doubly-Linked List
         btn4.setOnAction(e -> {
             textArea.setText("A doubly-link list is creating a playlist\n\n"
-                            + "(1) To insert a data you can add it to the first or the last or after an element "
-                            + "(2) When the playlist is playing you can move backward or forward\n\n
-                            + "(3) In deleting an element is similar in a sense since you can delete anything inside on the playlist"
-                            + "(4) Same as a playlist when searching a data it can see if the data is in or not"
+                            + "To insert a data you can add it to the first or the last or after an element "
+                            + "When the playlist is playing you can move backward or forward\n\n
+                            + "In deleting an element is similar in a sense since you can delete anything inside on the playlist"
+                            + "Same as a playlist when searching a data it can see if the data is in or not"
                             + "Lastly the data in can be presented in a forward or backward manner which is also possible in a playlist");
             //The one who owns this can change it if you think you can do better ~~Ace
             root1.getChildren().setAll(btn1, btn2, btn3, btn4,btn5,btn6, btn7, btn8,
@@ -188,12 +188,12 @@ public class Main extends Application {
                     "\n" +
                     "Value of the key: left < parent (node) < right\n" +
                     "\n" +
-                    "• Search − Searches an element in a tree.\n" +
+                    "• Search: Searches an element in a tree.\n" +
                     "Compare values against its roots (left||right) and parent (node)\n" +
-                    "• Insert − Inserts an element in a tree.\n" +
-                    "• Pre-order Traversal − Traverses a tree in a pre-order manner.\n" +
-                    "• In-order Traversal − Traverses a tree in an in-order manner.\n" +
-                    "Post-order Traversal − Traverses a tree in a post-order manner.");
+                    "• Insert: Inserts an element in a tree.\n" +
+                    "• Pre-order Traversal: Traverses a tree in a pre-order manner.\n" +
+                    "• In-order Traversal: Traverses a tree in an in-order manner.\n" +
+                    "Post-order Traversal: Traverses a tree in a post-order manner.");
 
 
             Image blockchain = new Image("sample/blockchain.jpg");
