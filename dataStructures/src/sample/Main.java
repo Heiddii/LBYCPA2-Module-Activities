@@ -209,9 +209,9 @@ public class Main extends Application {
         btn8.setOnAction(e -> {
             textArea.setText("A hash table is like a shopping list "
                             + "A hash table uses index which enumerate the data to numbers"
-                            + "When inserting data it ");
+                            + "When inserting data it enumerates it to things alike.");
             // Same with the first Doubly if the one assign can think of a better preview please put it
-            // Dont know what else to put yet pero i'll finish this this day
+
             root1.getChildren().setAll(btn1, btn2, btn3, btn4,btn5,btn6, btn7, btn8,
                     line_top, line_part, textArea);
         });
