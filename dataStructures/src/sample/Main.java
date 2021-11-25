@@ -109,12 +109,19 @@ public class Main extends Application {
         //TODO: Dynamic Array
         btn2.setOnAction(e -> {
             textArea.setText("Dynamic arrays is an array that when all the elements space is consumed its size will increase. " +
-                    "The size increase formula is 2*n which n is signifying the size of the array.  " +
-                    "Dynamic arrays is like a bank.\n\n" +
-                    "Access: To access an account there is a set of numbers that is unique to that account where the money is stored \n\n" +
-                    "Search: Is the same as access the number that was on the card is the indicator what acct it is\n\n" +
-                    "Insert: Opening a bank account is also dynamic because there are a lots of cards or bank account issued by tghe banks.\n\n" +
-                    "Access: When accessing a  data in the Dynamic array it is the same with static arrays\n\n ");
+                            "There is no perfect analogy for dynamic array since the world is limited resources.\n\n" +
+                            "College courses is one of the things that is the analogy chosen by the programmer.\n\n" +
+                            "The reason this was chosen by the programmer because after classes are filled with students some students still have not their schedules will open more. \n\n" +
+                            "The access, search, insert, and delete is the same as the static array.\n\n" +
+                            "Except if you insert a data and it is the max capacity it will add more empty data.");
+            //D:\\LBYCPA2\\Module1\\src\\main\\java\\com\\example\\module1\\schedule.png
+             Image sched = new Image("sample/schedule.png");
+            final ImageView schedule= new ImageView();
+            schedule.setImage(sched);
+            schedule.setFitHeight(200);
+            schedule.setFitWidth(400);
+            schedule.setX(300);
+            schedule.setY(150);
             root1.getChildren().setAll(btn1, btn2, btn3, btn4,btn5,btn6, btn7, btn8, line_top, line_part, textArea);
         });
 
@@ -141,13 +148,21 @@ public class Main extends Application {
         btn4.setOnAction(e -> {
             textArea.setText("A doubly-link list is creating a playlist\n\n"
                             + "To insert a data you can add it to the first or the last or after an element "
-                            + "When the playlist is playing you can move backward or forward\n\n
+                            + "When the playlist is playing you can move backward or forward\n\n"
                             + "In deleting an element is similar in a sense since you can delete anything inside on the playlist"
                             + "Same as a playlist when searching a data it can see if the data is in or not"
                             + "Lastly the data in can be presented in a forward or backward manner which is also possible in a playlist");
             //The one who owns this can change it if you think you can do better ~~Ace
+            // Incase that it will not work on the others pc use this code as ref for all "D:\\LBYCPA2\\Module1\\src\\main\\java\\com\\example\\module1\\play.jpg" Use this 
+            Image play = new Image("sample/play.jpg");
+            final ImageView player= new ImageView();
+            player.setImage(play);
+            player.setFitHeight(200);
+            player.setFitWidth(400);
+            player.setX(300);
+            player.setY(150);
             root1.getChildren().setAll(btn1, btn2, btn3, btn4,btn5,btn6, btn7, btn8,
-                    line_top, line_part, textArea);
+                    line_top, line_part, textArea, player);
         });
         
         //TODO: Stack
@@ -211,9 +226,14 @@ public class Main extends Application {
                             + "A hash table uses index which enumerate the data to numbers"
                             + "When inserting data it enumerates it to things alike.");
             // Same with the first Doubly if the one assign can think of a better preview please put it
-
+            //D:\\LBYCPA2\\Module1\\src\\main\\java\\com\\example\\module1\\shopping list.png
+            Image list = new Image("sample\shopping list.png");
+            final ImageView shoplist = new ImageView();
+            shoplist.setImage(list);
+            shoplist.setX(300);
+            shoplist.setY(150);
             root1.getChildren().setAll(btn1, btn2, btn3, btn4,btn5,btn6, btn7, btn8,
-                    line_top, line_part, textArea);
+                    line_top, line_part, textArea, shoplist);
         });
 
         Scene sceneStaticArray = new Scene(root1, 775,450);
