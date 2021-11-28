@@ -189,8 +189,15 @@ public class Main extends Application {
                             + "Insert: When inserting data it is always is behind the one who lined up first which is similar to lining up\n\n"
                             + "Delete: When deleting a data you will clear out the first one same with an event people lined up for the first one to go in is always the one in the front\n\n"
                             + "Search: When searching of data it is the same when accessing and deleting it you can only see the first data\n\n");
+             Lineup line = new Lineup();
             root1.getChildren().setAll(btn1, btn2, btn3, btn4,btn5,btn6, btn7, btn8,
-                    line_top, line_part, textArea);
+                    line_top, line_part, textArea,
+                    line.People(20 , -20 , "1"), line.People(70 , -20 , "2"),
+                    line.People(120 , -20 , "3"),
+                    line.People(20 , 30 , "1"), line.People(70 , 30 , "2"),
+                    line.People(120 , 30 , "3"), line.People(170 , 30 , "4"),
+                    line.People(20 , 80 , "2"),
+                    line.People(70 , 80 , "3"), line.People(120 , 80 , "4"));
         });
 
         //TODO: Binary Search Tree
