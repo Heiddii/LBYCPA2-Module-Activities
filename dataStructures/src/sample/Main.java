@@ -82,10 +82,6 @@ public class Main extends Application {
 
         root1.getChildren().setAll(btn1, btn2, btn3, btn4,btn5,btn6, btn7, btn8, line_top, line_part, textArea);
 
-        /**
-         * Usage: Code your objects, then add object at
-         * root1.getChildren().setAll(btn1, btn2, btn3, btn4,text, your objects...,n);
-         */
         btn1.setOnAction(e -> {
            
             Locker locker = new Locker();
@@ -106,7 +102,6 @@ public class Main extends Application {
                     locker.Locker(575, 150, "3"));
         });
         
-        //TODO: Dynamic Array
         btn2.setOnAction(e -> {
             textArea.setText("Dynamic arrays is an array that when all the elements space is consumed its size will increase. " +
                             "There is no perfect analogy for dynamic array since the world is limited resources.\n\n" +
@@ -114,7 +109,6 @@ public class Main extends Application {
                             "The reason this was chosen by the programmer because after classes are filled with students some students still have not their schedules will open more. \n\n" +
                             "The access, search, insert, and delete is the same as the static array.\n\n" +
                             "Except if you insert a data and it is the max capacity it will add more empty data.");
-            //D:\\LBYCPA2\\Module1\\src\\main\\java\\com\\example\\module1\\schedule.png
              Image sched = new Image("sample/schedule.png");
             final ImageView schedule= new ImageView();
             schedule.setImage(sched);
@@ -144,7 +138,6 @@ public class Main extends Application {
                     clinic.clinic(), clinic.patients());
         });
         
-        //TODO: Doubly-Linked List
         btn4.setOnAction(e -> {
             textArea.setText("A doubly-link list is creating a playlist\n\n"
                             + "To insert a data you can add it to the first or the last or after an element "
@@ -152,8 +145,6 @@ public class Main extends Application {
                             + "In deleting an element is similar in a sense since you can delete anything inside on the playlist"
                             + "Same as a playlist when searching a data it can see if the data is in or not"
                             + "Lastly the data in can be presented in a forward or backward manner which is also possible in a playlist");
-            //The one who owns this can change it if you think you can do better ~~Ace
-            // Incase that it will not work on the others pc use this code as ref for all "D:\\LBYCPA2\\Module1\\src\\main\\java\\com\\example\\module1\\play.jpg" Use this 
             Image play = new Image("sample/play.jpg");
             final ImageView player= new ImageView();
             player.setImage(play);
@@ -165,7 +156,6 @@ public class Main extends Application {
                     line_top, line_part, textArea, player);
         });
         
-        //TODO: Stack
         btn5.setOnAction(e -> {
             textArea.setText("Stack could be visualized as a stack of books, where anyone could add or remove a book " +
                     "but by first going through the topmost book, in order to not change the arrangement of the other books at the bottom.\n\n" +
@@ -182,7 +172,6 @@ public class Main extends Application {
                     Book.BookC(350,150), Book.number(305,290-150,"Book 3"));
         });
 
-        //TODO: Queue
         btn6.setOnAction(e -> {
             textArea.setText(" Queue is the as lining up to an event because it follows the first in first out rule\n\n"
                             + "Access: Similar to lining up to an event the first one to go in will always be the first one who lined up\n\n" 
@@ -200,7 +189,6 @@ public class Main extends Application {
                     line.People(70 , 80 , "3"), line.People(120 , 80 , "4"));
         });
 
-        //TODO: Binary Search Tree
         btn7.setOnAction(e -> {
             textArea.setText("What is a binary search tree?\n" +
                     "\n" +
@@ -227,13 +215,10 @@ public class Main extends Application {
                     line_top, line_part, textArea,blockandchain);
         });
 
-        //TODO: Hash Table
         btn8.setOnAction(e -> {
             textArea.setText("A hash table is like a shopping list "
                             + "A hash table uses index which enumerate the data to numbers"
                             + "When inserting data it enumerates it to things alike.");
-            // Same with the first Doubly if the one assign can think of a better preview please put it
-            //D:\\LBYCPA2\\Module1\\src\\main\\java\\com\\example\\module1\\shopping list.png
             Image list = new Image("sample\shopping list.png");
             final ImageView shoplist = new ImageView();
             shoplist.setImage(list);
