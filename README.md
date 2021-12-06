@@ -4,7 +4,7 @@ This directory build has all the modules for LBYCPA2
 ------------------------------------------------------------------------------------------------------------------------------------------
 Module 1: Datastructures 
 ------------------------------------------------------------------------------------------------------------------------------------------
-Gdocs:https://docs.google.com/document/d/1JZlRpafHXqukRs1xqEzdaXHrdzVh3nT9jHXCnV6VG-E/edit
+Gdocs: https://docs.google.com/document/d/1JZlRpafHXqukRs1xqEzdaXHrdzVh3nT9jHXCnV6VG-E/edit
 
 Module 2: Stacks 
 ------------------------------------------------------------------------------------------------------------------------------------------
