@@ -4,6 +4,7 @@
 
 char usernameDatabase[100][20];
 char passwordDatabase[100][20];
+int numAccounts;
 
 int countLine(char* fileName) {
     FILE *fp;
@@ -25,16 +26,16 @@ int countLine(char* fileName) {
 
 void loadRegistration() {
     FILE *fp;
-    fp = fopen("user_passcpatwo.txt", "r");
-    char c[3];
-
-    for(int i = 0; i < numAccounts; i++) {
+    fp = fopen("user_pass2.txt", "r");
+    char c[2];
+    int numAccounts = countLine("user_pass2.txt"), i;
+    for(i = 0; i < numAccounts; i++) {
         fscanf(fp, "%s", usernameDatabase[i]);
         fscanf(fp, "%s", passwordDatabase[i]);
-        fscanf(fp, "%s", c);
+        fscanf(fp, "%s", c); //number of lines
     }
     fclose(fp);
-}
+} /// reads the text file and add it to the usernameDatabase
 
 int checkUsername(char* user) {
     for(int i = 0; i < numAccounts; i++) {
@@ -79,7 +80,7 @@ int logIn() {
 
 
         count += 1;
-        system("clear");
+        system("cls");
     }
     while(!checkPassword(password) && !checkUsername(username)  && count <= 3);
   
